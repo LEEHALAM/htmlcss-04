@@ -1,0 +1,25 @@
+/* CSS Reset */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-image: url(images/bg.png);
+}
+
+.wrapper {
+  background-color: white;
+  width: 800px;
+  margin: 0 auto;
+}
