@@ -1,6 +1,7 @@
 /* CSS Reset */
 body,
-ul {
+ul,
+p {
   margin: 0;
   padding: 0;
 }
@@ -56,4 +57,25 @@ body {
 
 .menu li a:hover {
   color: orange;
+}
+
+.footer {
+  background-color: #7d410d;
+  color: rgb(230, 53, 53);
+  text-align: center;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  background-image: url(images/ground.png);
+  background-repeat: repeat-x;
+  display: block;
+  height: 50px;
+}
+
+.footer p {
+  padding: 20px 0;
 }
