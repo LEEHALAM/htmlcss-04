@@ -1,7 +1,8 @@
 /* CSS Reset */
 body,
 ul,
-p {
+p,
+h1 {
   margin: 0;
   padding: 0;
 }
@@ -17,13 +18,15 @@ a {
 
 body {
   background-image: url(images/bg.png);
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .wrapper {
   background-position: center;
   background-image: url(images/rope.png);
   width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 
 .header {
@@ -59,6 +62,72 @@ body {
   color: orange;
 }
 
+.section {
+  background-image: url(images/wood.png);
+  background-color: #7d410d;
+  margin: 50px 0;
+  padding: 30px;
+  border: 10px solid rgb(139, 57, 3);
+  color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.section h1 {
+  margin-bottom: 20px;
+  font-size: 80px;
+  line-height: 174px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-family: "Gochi Hand", cursive;
+}
+
+.section:nth-child(even) h1 {
+  background-position: left center;
+  text-align: right;
+}
+
+.section h1.animal01 {
+  background-image: url(images/animal01.png);
+  color: #74b9ff;
+}
+.section h1.animal02 {
+  background-image: url(images/animal02.png);
+  color: #fab1a0;
+}
+.section h1.animal03 {
+  background-image: url(images/animal03.png);
+  color: #fdffb6;
+}
+.section h1.animal04 {
+  background-image: url(images/animal04.png);
+  color: #06d6a0;
+}
+.section h1.animal05 {
+  background-image: url(images/animal05.png);
+  color: #b08968;
+}
+.section h1.animal06 {
+  background-image: url(images/animal06.png);
+  color: #8d99ae;
+}
+.section h1.animal07 {
+  background-image: url(images/animal07.png);
+  color: #3d5a80;
+}
+
+.section p {
+  line-height: 1.6;
+}
+
+.section p strong {
+  background-color: rgb(192, 105, 46);
+  padding: 0 20px;
+  border-radius: 10px;
+  color: #fdcb6e;
+}
+
 .footer {
   background-color: #7d410d;
   color: rgb(230, 53, 53);
@@ -66,6 +135,8 @@ body {
   border-bottom: 10px solid rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 0 30px 10px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer::before {
